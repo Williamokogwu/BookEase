@@ -1,1 +1,1 @@
-The manifest folder and the bot.json are not included
+This is the notes folder
