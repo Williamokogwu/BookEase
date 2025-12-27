@@ -1,0 +1,78 @@
+{
+    "name": "FallbackIntent",
+    "identifier": "FALLBCKINT",
+    "displayName": null,
+    "description": "Default intent when no other intent matches",
+    "parentIntentSignature": "AMAZON.FallbackIntent",
+    "sampleUtterances": null,
+    "intentConfirmationSetting": null,
+    "intentClosingSetting": null,
+    "initialResponseSetting": {
+        "conditional": null,
+        "codeHook": {
+            "isActive": true,
+            "postCodeHookSpecification": {
+                "failureResponse": null,
+                "failureNextStep": {
+                    "sessionAttributes": null,
+                    "intent": null,
+                    "dialogAction": {
+                        "type": "EndConversation",
+                        "slotToElicit": null,
+                        "suppressNextMessage": null,
+                        "intentsInScope": null
+                    }
+                },
+                "failureConditional": null,
+                "successResponse": null,
+                "successNextStep": {
+                    "sessionAttributes": null,
+                    "intent": null,
+                    "dialogAction": {
+                        "type": "EndConversation",
+                        "slotToElicit": null,
+                        "suppressNextMessage": null,
+                        "intentsInScope": null
+                    }
+                },
+                "successConditional": null,
+                "timeoutResponse": null,
+                "timeoutNextStep": {
+                    "sessionAttributes": null,
+                    "intent": null,
+                    "dialogAction": {
+                        "type": "EndConversation",
+                        "slotToElicit": null,
+                        "suppressNextMessage": null,
+                        "intentsInScope": null
+                    }
+                },
+                "timeoutConditional": null
+            },
+            "enableCodeHookInvocation": true,
+            "invocationLabel": null
+        },
+        "nextStep": {
+            "sessionAttributes": null,
+            "intent": null,
+            "dialogAction": {
+                "type": "InvokeDialogCodeHook",
+                "slotToElicit": null,
+                "suppressNextMessage": null,
+                "intentsInScope": null
+            }
+        },
+        "initialResponse": null
+    },
+    "inputContexts": null,
+    "outputContexts": null,
+    "kendraConfiguration": null,
+    "qnAIntentConfiguration": null,
+    "bedrockAgentIntentConfiguration": null,
+    "qInConnectIntentConfiguration": null,
+    "dialogCodeHook": {
+        "enabled": true
+    },
+    "fulfillmentCodeHook": null,
+    "slotPriorities": []
+}
