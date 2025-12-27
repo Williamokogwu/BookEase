@@ -1,0 +1,13 @@
+{
+  "name": "BookEase",
+  "version": "DRAFT",
+  "description": null,
+  "identifier": "PUP2BMOKGY",
+  "errorLogSettings": {
+    "enabled": false
+  },
+  "dataPrivacy": {
+    "childDirected": false
+  },
+  "idleSessionTTLInSeconds": 300
+}

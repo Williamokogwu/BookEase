@@ -1,0 +1,31 @@
+{
+    "name": "RoomType",
+    "identifier": "GYQOT3WEP9",
+    "description": null,
+    "slotTypeValues": [
+        {
+            "synonyms": null,
+            "sampleValue": {
+                "value": "King"
+            }
+        },
+        {
+            "synonyms": null,
+            "sampleValue": {
+                "value": "Queen"
+            }
+        },
+        {
+            "synonyms": null,
+            "sampleValue": {
+                "value": "Prince"
+            }
+        }
+    ],
+    "parentSlotTypeSignature": null,
+    "valueSelectionSetting": {
+        "resolutionStrategy": "ORIGINAL_VALUE",
+        "advancedRecognitionSetting": null,
+        "regexFilter": null
+    }
+}

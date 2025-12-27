@@ -1,0 +1,218 @@
+{
+    "name": "BookRoomIntent",
+    "identifier": "RFC4JNIBIH",
+    "displayName": null,
+    "description": null,
+    "parentIntentSignature": null,
+    "sampleUtterances": [
+        {
+            "utterance": "Book a room"
+        },
+        {
+            "utterance": "I want to book a room"
+        },
+        {
+            "utterance": "Make a reservation"
+        },
+        {
+            "utterance": "I'd like to reserve a room"
+        },
+        {
+            "utterance": "book a room"
+        },
+        {
+            "utterance": "i want to reserve"
+        },
+        {
+            "utterance": "make a reservation"
+        },
+        {
+            "utterance": "i would like to book"
+        },
+        {
+            "utterance": "room booking"
+        },
+        {
+            "utterance": "reserve a room"
+        }
+    ],
+    "intentConfirmationSetting": null,
+    "intentClosingSetting": {
+        "isActive": true,
+        "nextStep": {
+            "sessionAttributes": null,
+            "intent": {
+                "name": null,
+                "slots": null
+            },
+            "dialogAction": {
+                "type": "EndConversation",
+                "slotToElicit": null,
+                "suppressNextMessage": null,
+                "intentsInScope": null
+            }
+        },
+        "closingResponse": null
+    },
+    "initialResponseSetting": {
+        "conditional": null,
+        "codeHook": {
+            "isActive": true,
+            "postCodeHookSpecification": {
+                "failureResponse": null,
+                "failureNextStep": {
+                    "sessionAttributes": {},
+                    "intent": {
+                        "name": null,
+                        "slots": {}
+                    },
+                    "dialogAction": {
+                        "type": "EndConversation",
+                        "slotToElicit": null,
+                        "suppressNextMessage": null,
+                        "intentsInScope": null
+                    }
+                },
+                "failureConditional": null,
+                "successResponse": null,
+                "successNextStep": {
+                    "sessionAttributes": {},
+                    "intent": {
+                        "name": null,
+                        "slots": {}
+                    },
+                    "dialogAction": {
+                        "type": "ElicitSlot",
+                        "slotToElicit": "firstName",
+                        "suppressNextMessage": null,
+                        "intentsInScope": null
+                    }
+                },
+                "successConditional": null,
+                "timeoutResponse": null,
+                "timeoutNextStep": {
+                    "sessionAttributes": {},
+                    "intent": {
+                        "name": null,
+                        "slots": {}
+                    },
+                    "dialogAction": {
+                        "type": "EndConversation",
+                        "slotToElicit": null,
+                        "suppressNextMessage": null,
+                        "intentsInScope": null
+                    }
+                },
+                "timeoutConditional": null
+            },
+            "enableCodeHookInvocation": true,
+            "invocationLabel": null
+        },
+        "nextStep": {
+            "sessionAttributes": {},
+            "intent": {
+                "name": null,
+                "slots": {}
+            },
+            "dialogAction": {
+                "type": "InvokeDialogCodeHook",
+                "slotToElicit": null,
+                "suppressNextMessage": null,
+                "intentsInScope": null
+            }
+        },
+        "initialResponse": null
+    },
+    "inputContexts": null,
+    "outputContexts": null,
+    "kendraConfiguration": null,
+    "qnAIntentConfiguration": null,
+    "bedrockAgentIntentConfiguration": null,
+    "qInConnectIntentConfiguration": null,
+    "dialogCodeHook": {
+        "enabled": false
+    },
+    "fulfillmentCodeHook": {
+        "isActive": true,
+        "postFulfillmentStatusSpecification": {
+            "failureResponse": null,
+            "failureNextStep": {
+                "sessionAttributes": null,
+                "intent": {
+                    "name": null,
+                    "slots": null
+                },
+                "dialogAction": {
+                    "type": "EndConversation",
+                    "slotToElicit": null,
+                    "suppressNextMessage": null,
+                    "intentsInScope": null
+                }
+            },
+            "successResponse": null,
+            "successNextStep": {
+                "sessionAttributes": null,
+                "intent": {
+                    "name": null,
+                    "slots": null
+                },
+                "dialogAction": {
+                    "type": "EndConversation",
+                    "slotToElicit": null,
+                    "suppressNextMessage": null,
+                    "intentsInScope": null
+                }
+            },
+            "timeoutResponse": null,
+            "timeoutNextStep": {
+                "sessionAttributes": null,
+                "intent": {
+                    "name": null,
+                    "slots": null
+                },
+                "dialogAction": {
+                    "type": "EndConversation",
+                    "slotToElicit": null,
+                    "suppressNextMessage": null,
+                    "intentsInScope": null
+                }
+            }
+        },
+        "fulfillmentUpdatesSpecification": null,
+        "enabled": true
+    },
+    "slotPriorities": [
+        {
+            "priority": 6,
+            "slotName": "roomType"
+        },
+        {
+            "priority": 0,
+            "slotName": "firstName"
+        },
+        {
+            "priority": 4,
+            "slotName": "checkInDate"
+        },
+        {
+            "priority": 3,
+            "slotName": "emailAddress"
+        },
+        {
+            "priority": 2,
+            "slotName": "phoneNumber"
+        },
+        {
+            "priority": 7,
+            "slotName": "confirmBooking"
+        },
+        {
+            "priority": 5,
+            "slotName": "checkoutDate"
+        },
+        {
+            "priority": 1,
+            "slotName": "lastname"
+        }
+    ]
+}
